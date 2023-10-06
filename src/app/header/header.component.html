@@ -6,6 +6,8 @@
     <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Bethesda_Softworks_Logo.svg/600px-Bethesda_Softworks_Logo.svg.png" alt="logo Bethesda">
   </div>
   <div>
+    <p style="color: white; font-weight: bold;">{{ busqueda }}</p>
+    <input type="text" placeholder="busqueda..." [(ngModel)]="busqueda">
     <button >
       <ion-icon slot="icon-only" name="search"></ion-icon>
     </button>
