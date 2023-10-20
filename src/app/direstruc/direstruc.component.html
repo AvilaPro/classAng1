@@ -1,0 +1,13 @@
+<div style="display: flex; flex-direction: column; align-items: center; height: 250px;">
+  <div>
+    Selecciona un estudiante
+    ( <label><input type="checkbox" name="" id="" checked (change)="verReprobados = !verReprobados"> No ver reprobados</label>  )
+  </div>
+  <select name="" id="" [(ngModel)]="estudianteSeleccionado">
+    <ng-container *ngFor="let e of estudiantes">
+      <ng-container *ngIf="verReprobados || e.aprobado">
+        <option [ngValue]="e">{{e.nombre}} - {{e.aprobado ? 'Aprobado' : 'Reprobado'}}</option>
+      </ng-container>
+    </ng-container>
+  </select>
+</div>

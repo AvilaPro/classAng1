@@ -28,6 +28,10 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NewsComponent } from './main/news/news.component';
+import { DirestrucComponent } from './direstruc/direstruc.component';
+import { MainComponent } from './main/main/main.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +39,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     SubHeaderComponent,
     BannerComponent,
-    InfoComponent
+    InfoComponent,
+    NewsComponent,
+    DirestrucComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
